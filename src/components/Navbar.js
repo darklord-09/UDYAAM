@@ -14,7 +14,58 @@ export default function Navbar() {
   }
 
 
-  
+  const [orderdata, setorderdata] = useState({});
+
+  const fetchMyOrder = async () => {
+      console.log(localStorage.getItem('userEmail'))
+
+       await fetch("http://localhost:5000/api/myorderdata", {
+          
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body:JSON.stringify({
+              email:localStorage.getItem('userEmail')
+          })
+      }).then(async (res) => {
+          let response = await res.json()
+          console.log("re",response)
+          await setorderdata(response)
+      })
+
+      // await res.map((data)=>{
+      //    console.log(data)
+      // })
+      
+
+  }
+useEffect(() => {
+      fetchMyOrder()
+  }, []) 
+
+
+  let l=1000000
+  let r= orderdata !=={}?Array(orderdata).map((item)=>{
+                         
+     return(
+         
+        item.orderdata?
+         
+          
+             item.orderdata.order_data.map((obj)=>{
+                 l=obj?obj[0].Balance:""
+             })
+         
+         :""
+         
+         
+         
+         )
+      
+         
+     
+  }):""
 
 
   
@@ -32,6 +83,8 @@ export default function Navbar() {
           <Link className="nav-link fs-5" aria-current="page" to="/">Home</Link>
         </li>
         
+        
+
         {
           (localStorage.getItem("authToken"))?<li className="nav-item">
           <Link className="nav-link fs-5" aria-current="page" to="/myorder">My Portfolio</Link>
@@ -39,6 +92,13 @@ export default function Navbar() {
         }
        
       </ul>
+      <center>
+      {
+          (localStorage.getItem("authToken"))?<li className="nav-item fs-5 text-white">
+          MY ACCOUNT BALANCE:{l}
+        </li>:""
+        }
+        </center>
       
       {
           (!localStorage.getItem("authToken"))?<div className='d-flex'>
