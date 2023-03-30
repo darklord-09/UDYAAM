@@ -10,10 +10,9 @@ export default function Footer() {
       </Link>
       <span className="text-muted">© 2023 HappyStocks, Inc</span>
     </div>
+    
 
-    <ul className="nav col-md-4 justify-content-end list-unstyled d-flex">
-      
-    </ul>
+    
   </footer>
     </div>
   )

@@ -9,6 +9,9 @@ export default function Card(props) {
     const priceRef=useRef();
     const [qty , setQty]=useState(0);
     const [size ,setSize]=useState("");
+
+
+    
     
     
     const handleBuy= async()=>{
@@ -34,7 +37,7 @@ export default function Card(props) {
                     <img src="https://source.unsplash.com/random/100x50/?stocks" className="card-img-top" alt="..." />
                     <div className="card-body">
                         <h5 className="card-title text-white">{props.investmentItem.name}</h5>
-                        <p className="card-text text-white">Something</p>
+                       
                         <div className='container w-100'>
                             <input type="number" id="number" onChange={(e)=>setQty(e.target.value)}/>
                             <select className='m-2 h-100 bg-success rounded text-white' ref={priceRef} onChange={(e)=> setSize(e.target.value)}>

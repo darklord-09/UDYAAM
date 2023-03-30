@@ -83,7 +83,9 @@ useEffect(() => {
           <Link className="nav-link fs-5" aria-current="page" to="/">Home</Link>
         </li>
         
-        
+        <li className="nav-item">
+          <Link className="nav-link fs-5" aria-current="page" to="/aboutus">About us</Link>
+        </li>
 
         {
           (localStorage.getItem("authToken"))?<li className="nav-item">
