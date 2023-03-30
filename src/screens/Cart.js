@@ -48,12 +48,36 @@ useEffect(() => {
   
   
   //new code start
-  
+ let l=0 
+ let r= orderdata !=={}?Array(orderdata).map((item)=>{
+                        
+    return(
+        
+       item.orderdata?
+        
+         
+            item.orderdata.order_data.map((obj)=>{
+                l=obj?obj[0].Balance:""
+            })
+        
+        :""
+        
+        
+        
+        )
+     
+        
+    
+ }):""
+   
+  console.log("l",l);
+
   
   //new code end
-let   totalPrice = data.reduce((total, stock) => total + stock.price,1000000)
+let   totalPrice = data.reduce((total, stock) => total + stock.price,l)
 
   const handleCheckOut = async () => {
+    if(totalPrice>=0){
     let userEmail = localStorage.getItem("userEmail");
     
     let response = await fetch("http://localhost:5000/api/orderdata", {
@@ -73,6 +97,9 @@ let   totalPrice = data.reduce((total, stock) => total + stock.price,1000000)
     console.log("JSON RESPONSE:::::", response.status)
     if (response.status === 200) {
       dispatch({ type: "DROP" })
+    }}
+    else{
+      alert("You have insufficient balance")
     }
   }
 
