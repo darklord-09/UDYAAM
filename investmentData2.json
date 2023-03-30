@@ -1,0 +1,137 @@
+[
+    {
+        "CategoryName": "Stocks",
+        "name": "CEAT",
+        "img": "https://images.app.goo.gl/YLRUG74wh6jcAsqu8",
+        "options": [
+            {
+                "common": "130",
+                "preffered": "220"
+            }
+        ],
+        "description": "Mid Cap company (having a market cap of Rs 5,603.96 Crore) operating in Tyres sector"
+    },
+    {
+        "CategoryName": "Stocks",
+        "name": "Reliance",
+        "img": "https://images.app.goo.gl/YLRUG74wh6jcAsqu8",
+        "options": [
+            {
+                "common": "110",
+                "preffered": "200"
+            }
+        ],
+        "description": "Reliance Industries Limited is an Indian multinational conglomerate, headquartered in Mumbai. It has diverse businesses including energy, petrochemicals, natural gas, retail, telecommunications, mass media, and textiles."
+    },
+    {
+        "CategoryName": "Stocks",
+        "name": "MRF",
+        "img": "https://images.app.goo.gl/YLRUG74wh6jcAsqu8",
+        "options": [
+            {
+                "common": "200",
+                "preffered": "320"
+            }
+        ],
+        "description": "Madras Rubber Factory, commonly known as MRF or MRF Tyres, is an Indian Multinational tyre manufacturing company and the largest manufacturer of tyres in India. It is headquartered in Chennai, Tamil Nadu, India."
+    },
+    {
+        "CategoryName": "Stocks",
+        "name": "Apple",
+        "img": "https://images.app.goo.gl/YLRUG74wh6jcAsqu8",
+        "options": [
+            {
+                "common": "170",
+                "preffered": "300"
+            }
+        ],
+        "description": "Apple Inc. is an American multinational technology company headquartered in Cupertino, California. Apple is the largest technology company by revenue, totaling US$394.3 billion in 2022. As of March 2023, Apple is the world's biggest company by market capitalization. "
+    },
+    {
+        "CategoryName": "Stocks",
+        "name": "Google",
+        "img": "https://images.app.goo.gl/YLRUG74wh6jcAsqu8",
+        "options": [
+            {
+                "common": "150",
+                "preffered": "260"
+            }
+        ],
+        "description": "Google is an American multinational technology conglomerate holding company headquartered in Mountain View, California. It was created through a restructuring of Google on October 2, 2015, and became the parent company of Google and several former Google subsidiaries."
+    },
+   
+    {
+        "CategoryName": "Mutual Funds",
+        "name": "Aditya Birla",
+        "img": "https://images.app.goo.gl/YLRUG74wh6jcAsqu8",
+        "options": [
+            {
+                "common": "120",
+                "preffered": "200"
+            }
+        ],
+        "description": "The Aditya Birla Sun Life Medium Term Direct Plan Growth is rated Moderately High risk."
+    },
+    {
+        "CategoryName": "Mutual Funds",
+        "name": "ICICI",
+        "img": "https://images.app.goo.gl/YLRUG74wh6jcAsqu8",
+        "options": [
+            {
+                "common": "150",
+                "preffered": "260"
+            }
+        ],
+        "description": "The ICICI Medium Term Direct Plan Growth is rated LOW risk."
+    },
+    {
+        "CategoryName": "Mutual Funds",
+        "name": "Kotak",
+        "img": "https://images.app.goo.gl/YLRUG74wh6jcAsqu8",
+        "options": [
+            {
+                "common": "170",
+                "preffered": "300"
+            }
+        ],
+        "description": "The Kotak Medium Term Direct Plan Growth is rated High risk."
+    },
+    {
+        "CategoryName": "Mutual Funds",
+        "name": "Nippon",
+        "img": "https://images.app.goo.gl/raNCD4Kjsv2j2CaY6",
+        "options": [
+            {
+                "common": "170",
+                "preffered": "250"
+            }
+        ],
+        "description": "The Nippon Medium Term Direct Plan Growth is rated Moderately High risk."
+    },
+    {
+        "CategoryName": "Bonds",
+        "name": "ICICI Prudential Corporate Bond Fund",
+        "img": "https://images.app.goo.gl/bQsKzoFwGV7F9mHM6",
+        "options": [
+            {
+                "low": "120",
+                "medium": "230",
+                "high": "350"
+            }
+        ],
+        "description": "The Kotak Medium Term Direct Plan Growth is rated High risk."
+    },
+    {
+        "CategoryName": "Bonds",
+        "name": "Nippon India Prime Debt Fund",
+        "img": "https://images.app.goo.gl/raNCD4Kjsv2j2CaY6",
+        "options": [
+            {
+                "low": "100",
+                "medium": "200",
+                "high": "300"
+            }
+        ],
+        "description": "The Nippon Medium Term Direct Plan Growth is rated Moderately High risk."
+    }
+]
