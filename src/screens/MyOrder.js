@@ -51,11 +51,14 @@ export default function MyOrder() {
                             <div>
                              {
                                 item.orderdata.order_data.map((obj)=>{
+                                    
                                     return(
+                                     
                                         obj.map((arrdata)=>{
                                             return(
                                                 
                                              arrdata.qty?<div className='col-12 col-md-6 col-lg-3' >
+                                                         
                                                             <div className="card mt-3" style={{ width: "16rem", maxHeight: "360px" }}>
                                                                 
                                                                 <div className="card-body">
@@ -72,6 +75,7 @@ export default function MyOrder() {
                                                         </div>:""
                                             )
                                         })
+                                    
                                     )
                                 })
                             }

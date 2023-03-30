@@ -48,7 +48,7 @@ useEffect(() => {
   
   
   //new code start
- let l=0 
+ let l=1000000
  let r= orderdata !=={}?Array(orderdata).map((item)=>{
                         
     return(

@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React,{ useEffect, useState } from 'react';
 import {Link, useNavigate} from "react-router-dom";
 import { Badge } from 'react-bootstrap-v5';
 import Modal from '../Modal';
@@ -12,6 +12,11 @@ export default function Navbar() {
     localStorage.removeItem("authToken");
     navigate("/");
   }
+
+
+  
+
+
   
   return (
     <div>
@@ -29,7 +34,7 @@ export default function Navbar() {
         
         {
           (localStorage.getItem("authToken"))?<li className="nav-item">
-          <Link className="nav-link fs-5" aria-current="page" to="/myorder">My Orders</Link>
+          <Link className="nav-link fs-5" aria-current="page" to="/myorder">My Portfolio</Link>
         </li>:""
         }
        
